@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.spicefactory.parsley.flash.logging {
+package org.spicefactory.parsley.logging.spicelib {
 
 import org.spicefactory.lib.logging.LogLevel;
 import org.spicefactory.lib.reflect.Converters;
