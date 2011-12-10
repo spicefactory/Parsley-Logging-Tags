@@ -54,13 +54,13 @@ public class LogFactoryTag {
 	 */
 	public var rootLevel:LogLevel;
 	
-	[ChoiceType("org.spicefactory.parsley.flash.logging.AppenderTag")]
+	[ChoiceType("org.spicefactory.parsley.logging.spicelib.AppenderTag")]
 	/**
 	 * The appenders to add to the factory.
 	 */
 	public var appenders:Array;
 	
-	[ChoiceType("org.spicefactory.parsley.flash.logging.LoggerTag")]
+	[ChoiceType("org.spicefactory.parsley.logging.spicelib.LoggerTag")]
 	/**
 	 * The loggers to add to the factory.
 	 */
