@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<componentPackage>
+	<component id="LoggingXmlSupport" class="org.spicefactory.parsley.logging.flex.FlexLoggingXmlSupport"/>
+</componentPackage>
