@@ -25,7 +25,7 @@ import org.spicefactory.parsley.xml.mapper.XmlConfigurationNamespaceRegistry;
  * 
  * @author Jens Halm
  */
-public class FlashLoggingXmlSupport {
+public class SpicelibLoggingXmlSupport {
 	
 	
 	/**
