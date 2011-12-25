@@ -15,9 +15,9 @@
  */
 
 package org.spicefactory.parsley.logging.flex {
+import org.spicefactory.parsley.core.bootstrap.BootstrapConfigProcessor;
 import org.spicefactory.lib.reflect.ClassInfo;
 import org.spicefactory.parsley.core.bootstrap.BootstrapConfig;
-import org.spicefactory.parsley.flex.tag.builder.BootstrapConfigProcessor;
 import org.spicefactory.parsley.xml.mapper.XmlConfigurationNamespaceRegistry;
 
 /**
