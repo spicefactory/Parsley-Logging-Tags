@@ -5,7 +5,7 @@ import org.hamcrest.object.equalTo;
 import org.spicefactory.lib.logging.LogContext;
 import org.spicefactory.lib.logging.Logger;
 import org.spicefactory.lib.logging.flex.FlexLogFactory;
-import org.spicefactory.parsley.dsl.context.ContextBuilder;
+import org.spicefactory.parsley.context.ContextBuilder;
 import org.spicefactory.parsley.logging.flex.FlexLoggingXmlSupport;
 import org.spicefactory.parsley.xml.XmlConfig;
 

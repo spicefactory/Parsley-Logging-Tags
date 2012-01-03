@@ -4,8 +4,8 @@ import org.hamcrest.assertThat;
 import org.hamcrest.object.equalTo;
 import org.spicefactory.lib.logging.LogContext;
 import org.spicefactory.lib.logging.Logger;
+import org.spicefactory.parsley.context.ContextBuilder;
 import org.spicefactory.parsley.core.context.Context;
-import org.spicefactory.parsley.dsl.context.ContextBuilder;
 import org.spicefactory.parsley.logging.spicelib.SpicelibLoggingXmlSupport;
 import org.spicefactory.parsley.xml.XmlConfig;
 
