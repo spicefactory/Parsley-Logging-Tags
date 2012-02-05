@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+    xmlns="http://www.spicefactory.org/parsley/flex/logging"
+    xmlns:tns="http://www.spicefactory.org/parsley/flex/logging"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.spicefactory.org/parsley/flex/logging">
+
+    <xs:element name="target">
+        <xs:complexType>
+        	<xs:choice minOccurs="0" maxOccurs="unbounded">
+        		<xs:element name="filter" type="xs:token"/>
+        	</xs:choice>
+            <xs:attribute name="id" type="xs:token" use="optional"/>
+            <xs:attribute name="type" type="xs:token" use="optional"/>
+            <xs:attribute name="level" type="level" use="optional"/>
+            <xs:attribute name="field-separator" type="xs:token" use="optional"/>
+            <xs:attribute name="include-category" type="xs:boolean" use="optional"/>
+            <xs:attribute name="include-level" type="xs:boolean" use="optional"/>
+            <xs:attribute name="include-date" type="xs:boolean" use="optional"/>
+            <xs:attribute name="include-time" type="xs:boolean" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:simpleType name="level">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="debug"/>
+            <xs:enumeration value="info"/>
+            <xs:enumeration value="warn"/>
+            <xs:enumeration value="error"/>
+            <xs:enumeration value="fatal"/>
+        </xs:restriction>
+    </xs:simpleType>
+ 
+    
+</xs:schema>

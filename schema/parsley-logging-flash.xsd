@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+    xmlns="http://www.spicefactory.org/parsley/flash/logging"
+    xmlns:tns="http://www.spicefactory.org/parsley/flash/logging"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.spicefactory.org/parsley/flash/logging">
+
+    <xs:element name="factory">
+        <xs:complexType>
+        	<xs:choice minOccurs="0" maxOccurs="unbounded">
+        		<xs:element name="logger" type="loggerType"/>
+        		<xs:element name="appender" type="appenderType"/>
+        	</xs:choice>
+            <xs:attribute name="id" type="xs:token" use="optional"/>
+            <xs:attribute name="type" type="xs:token" use="optional"/>
+            <xs:attribute name="context" type="xs:boolean" use="optional"/>
+            <xs:attribute name="root-level" type="level" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="loggerType">
+        <xs:attribute name="name" type="xs:token" use="required"/>
+        <xs:attribute name="level" type="level" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="appenderType">
+        <xs:attribute name="ref" type="xs:token" use="required"/>
+        <xs:attribute name="threshold" type="level" use="optional"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="level">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="off"/>
+            <xs:enumeration value="trace"/>
+            <xs:enumeration value="debug"/>
+            <xs:enumeration value="info"/>
+            <xs:enumeration value="warn"/>
+            <xs:enumeration value="error"/>
+            <xs:enumeration value="fatal"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>
